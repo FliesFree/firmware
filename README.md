@@ -34,4 +34,6 @@ Steps:
       
 Enjoi it!
 
+<img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Logo/flies_free_logo.png"/>
+
 FliesFree Firmware Pietro Rignanese ver. 1.0
