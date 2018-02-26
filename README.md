@@ -2,7 +2,9 @@
 
 ## Flies Free
 
-Firmware to be installed on the Raspberry
+Firmware to be installed on the Raspberry<br>
+All the details in the following reposity: https://github.com/FliesFree/FliesFree <br>
+
 
 Steps:
   * Install [ApioOS](https://github.com/ApioLab/ApioOS)
@@ -37,3 +39,6 @@ Enjoi it!
 <img src="https://github.com/FliesFree/FliesFree/blob/master/Foto/Logo/flies_free_logo.png"/>
 
 FliesFree Firmware Pietro Rignanese ver. 1.0
+
+Contacts: 
+  * Mail: pietro_rignanese@hotmail.it --> Objects:FliesFree Information 
