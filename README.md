@@ -30,5 +30,8 @@ Steps:
       * `sudo apt-get install python-matplotlib`
    * Install MySQL:
       * `sudo apt-get install mysqldb`
+      
+      
+Enjoi it!
 
-ver. 1.0
+FliesFree Firmware Pietro Rignanese ver. 1.0
