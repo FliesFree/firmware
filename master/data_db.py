@@ -4,16 +4,14 @@ import date_hour
 import time
 
 def query_select():
-	db = MySQLdb.connect(host="localhost",user="root",passwd="root",db="Logs")
-
-	cur = db.cursor()
-	
 	controllo = 0 #Trigger ON/OFF
 	cod = 0 #code for sending verification
 	ident = 0 #ID 
 	contr = 0 #Controll to loop
 	
 	for n in range(0,40):
+		db = MySQLdb.connect(host="localhost",user="root",passwd="root",db="Logs")
+		cur = db.cursor()
 		cur.execute("SELECT id,onoff,codice FROM `11` WHERE onoff=1")
 		for row in cur.fetchall():
 			cod = row[2]
@@ -49,9 +47,8 @@ def query_select():
 			contr = 1
 			print("Immagine elaborata!")
 		
+		db.close()
 		time.sleep(10)
-	
-	db.close()
 	
 	
 def query_delete():
