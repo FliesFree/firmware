@@ -33,6 +33,8 @@ Steps:
    * Install MySQL:
       * `sudo apt-get install mysqldb`
       
+### Workflow:
+https://github.com/FliesFree/firmware/blob/master/diagram.png
       
 Enjoi it!
 
