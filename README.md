@@ -10,9 +10,9 @@ Steps:
   * Install [ApioOS](https://github.com/ApioLab/ApioOS)
   * Install [firmware](https://github.com/ApioLab/ApioOS/wiki) in the dongles with Arduino IDE
   * Insert the [dongle](https://www.apio.cc/component/virtuemart/store_ita/prodotti/apio-dongle-1-4-detail) in a USB port of Rasp
-  * Clone the GIT in the Raspberry:
-      * `git clone https://github.com/FliesFree/firmware/master` MASTER
-      * `git clone https://github.com/FliesFree/firmware/slave` SLAVE
+  * Connect Rasp to WEB and Clone the GIT in the Raspberry:
+      * `git clone https://github.com/FliesFree/firmware`
+      * Use the directory `master` to Raspberry Master and directory `slave` to Rasp Slave
   * Enable and install the camera PI:
       * `sudo apt-get update`
       * `sudo apt-get upgrate`
