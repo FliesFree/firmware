@@ -4,8 +4,8 @@ import pycurl
 def send_photo(url_photo):
     print("Send...")
     c = pycurl.Curl()
-    c.setopt(c.URL, '192.168.43.233/test/SlimApp/public/index.php')
-
+    c.setopt(c.URL, '192.168.0.109/test/SlimApp/public/index.php')
+    print("OK!")
     c.setopt(c.HTTPPOST, [
         ('fileupload', (
             # upload the contents of this file

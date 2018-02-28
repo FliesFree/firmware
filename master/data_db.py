@@ -2,6 +2,7 @@ import MySQLdb
 import base64
 import date_hour
 import time
+import send_server
 
 def query_select():
 	controllo = 0 #Trigger ON/OFF
@@ -40,12 +41,14 @@ def query_select():
 			image_64 = image_64.replace(".","=")
 			print(image_64)
 			base_64_decode = base64.decodestring(image_64)
-			immagine = open("Risults/result_slave_%s.png"%date_hour.date_hour_now(),"wb")
+			url_photo_slave = "Results/result_slave_%s.png"%date_hour.date_hour_now()
+			immagine = open(url_photo_slave,"wb")
 			immagine.write(base_64_decode)
 			immagine.close()
 			#cur.execute("DELETE FROM `11` WHERE id>1")
 			contr = 1
 			print("Immagine elaborata!")
+			send_server.send_photo(url_photo_slave)
 		
 		db.close()
 		time.sleep(10)

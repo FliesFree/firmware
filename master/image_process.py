@@ -6,6 +6,7 @@ import cv2 as cv
 import date_hour
 import numpy as np
 from matplotlib import pyplot as plt
+import send_server
 
   #Function visual photo
 def visual_photo():
@@ -34,8 +35,7 @@ def flies_search():
     num_cicli = 0 #flies loop
     conf = 0 #Comparison variable to be able to count the number of rectangles
     
-    #
-The areas where flies were found are highlighted
+    #The areas where flies were found are highlighted
     for pt in zip(*loc[::-1]):
    #------Algoritm flies number-------     
         if num_cicli == 0:
@@ -72,9 +72,13 @@ The areas where flies were found are highlighted
    #-----------------------------------------
         cv.rectangle(img_rgb, pt2, (pt2[0] + w2, pt2[1] + h2), (0,0,255), 1)
         
-    #Save the image   
-    cv.imwrite('Results/result_%s.png'%date_hour.date_hour_now(),img_rgb)
+    #Save the image
+    url_photo = "Results/result_%s.png"%date_hour.date_hour_now()   
+    cv.imwrite(url_photo,img_rgb)
     print("Search complete!")
     print("Flies:")
     print(num_mosche)
     num_mosche = 0 #Rest the number of flies to zero for a future count
+
+    send_server.send_photo(url_photo) 
+

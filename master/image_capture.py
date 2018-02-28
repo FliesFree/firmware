@@ -10,7 +10,7 @@ def get_img():
     print("Get photo...")
     camera = PiCamera()
     camera.start_preview()
-    camera.annotate_text = data_ora.data_ora_attuale()
+    camera.annotate_text = date_hour.date_hour_now()
     time.sleep(5)
     camera.capture('Trap/%s.jpg' % date_hour.date_hour_now())
     camera.stop_preview()
