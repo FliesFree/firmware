@@ -3,11 +3,12 @@
 #--------------------------------FliesFree-----------------------------
 
 import cv2 as cv
-import data_ora
+import date_hour
 import numpy as np
 from matplotlib import pyplot as plt
 import send_data as dongle
 import time
+import image_frag
 
   #Funzione per visualizzare lo scatto su schermo
 def visual_photo():
@@ -73,8 +74,9 @@ def flies_search():
    #-----------------------------------------
         cv.rectangle(img_rgb, pt2, (pt2[0] + w2, pt2[1] + h2), (0,0,255), 1)
         
-    #Viene salvata l'immagine con le relative mosche evidenziate    
-    cv.imwrite('Results/result_%s.jpg'%date_hour.date_hour_now(),img_rgb)
+    #Viene salvata l'immagine con le relative mosche evidenziate
+    url_photo = "Results/result_%s.jpg"%date_hour.date_hour_now()    
+    cv.imwrite(url_photo,img_rgb)
     print("Search complete!")
     print("Flies:")
     print(num_mosche)
@@ -82,7 +84,6 @@ def flies_search():
     time.sleep(0.2)
     dongle.send_dongle("onoff",0)
     time.sleep(0.2)
-    dongle.send_dongle("codice",0)
-    time.sleep(0.2)
     dongle.send_dongle("flies",num_mosche)
     num_mosche = 0 #Riposrto a zero il numero delle mosche per una conta futura
+    image_frag.fragment(url_photo)
