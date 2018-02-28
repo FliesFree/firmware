@@ -32,6 +32,7 @@ Steps:
       * `sudo apt-get install python-matplotlib`
    * Install MySQL:
       * `sudo apt-get install mysqldb`
+   * Run the `main.py` in both shields
       
 ### Workflow:
 https://github.com/FliesFree/firmware/blob/master/diagram.png
