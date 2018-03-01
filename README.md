@@ -37,6 +37,9 @@ Steps:
       
 ### Workflow:
 https://github.com/FliesFree/firmware/blob/master/diagram.png
+
+## Cost
+<img src="https://github.com/FliesFree/firmware/blob/master/Cost.png"/>
       
 Enjoi it!
 
