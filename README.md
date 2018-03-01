@@ -5,6 +5,8 @@
 Firmware to be installed on the Raspberry<br>
 All the details in the following reposity: https://github.com/FliesFree/FliesFree <br>
 
+## Scheme
+<img src="https://github.com/FliesFree/firmware/blob/master/Scheme.png"/>
 
 Steps:
   * Install [ApioOS](https://github.com/ApioLab/ApioOS)
