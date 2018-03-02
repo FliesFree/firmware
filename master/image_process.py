@@ -80,5 +80,5 @@ def flies_search():
     print(num_mosche)
     num_mosche = 0 #Rest the number of flies to zero for a future count
 
-    send_server.send_photo(url_photo) 
+    send_server.send_photo(url_photo) #send the photo to web server
 
