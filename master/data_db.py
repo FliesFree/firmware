@@ -4,12 +4,14 @@ import date_hour
 import time
 import send_server
 
+#Function SELECT and get the data in database
 def query_select():
-	controllo = 0 #Trigger ON/OFF
-	cod = 0 #code for sending verification
+	controllo = 0 #Trigger ON/OFF --> Get the values only when this value is 1
+	cod = 0 #Code's Shield
 	ident = 0 #ID 
 	contr = 0 #Controll to loop
 	
+	#Loop 10 minutes --> cycle until it finds controllo = 1
 	for n in range(0,40):
 		db = MySQLdb.connect(host="localhost",user="root",passwd="root",db="Logs")
 		cur = db.cursor()
@@ -31,7 +33,7 @@ def query_select():
 			sql = sql + sql2
 			print(sql)
 			cur.execute(sql)
-			#cur.execute("DELETE FROM Logs.`11` WHERE `id`>1")
+		
 			image_64 = ""
 
 			for row in cur.fetchall():
@@ -55,7 +57,8 @@ def query_select():
 		db.close()
 		time.sleep(10)
 	
-	
+
+#Functio query delete
 def query_delete():
 	db = MySQLdb.connect(host="localhost",user="root",passwd="root",db="Logs")
 
