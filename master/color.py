@@ -1,3 +1,5 @@
+#Color Class to change the background
+
 class bcolors:
 		DEFAULT = '\033[0m'
 		WHITE = '\033[47m'
