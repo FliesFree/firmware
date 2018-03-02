@@ -7,7 +7,7 @@ import time
 import date_hour 
 
 def get_img():
-    print("Get photo...")
+    print(" -+-+-+-+- Get photo -+-+-+-+-")
     camera = picamera.PiCamera()
     camera.start_preview()
     camera.annotate_text = date_hour.date_hour_now()
@@ -15,4 +15,4 @@ def get_img():
     camera.resolution=(500,600)
     camera.capture('Trap/%s.jpg' % date_hour.date_hour_now())
     camera.stop_preview()
-    print("Foto scattata.")
+    print("_____ PHOTO OK _____")
