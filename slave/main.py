@@ -4,6 +4,11 @@ import date_hour as d
 import image_frag
 import time
 
+print("----------------FLIESFREE-------------------")
+print("______________DEVELOPED BY__________________")
+print("            Pietro Rignanese                ")
+print("-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+")
+
 #Cattura immagine tramite scatto con la PiCamera
 image_capture.get_img()
 #time.sleep(8)
@@ -16,4 +21,4 @@ image_process.flies_search()
 #image_frag.fragment()
 
 
-print("OFF State...")
+print("-+-+-+-+-+ RASP SLEEP ----------->")
