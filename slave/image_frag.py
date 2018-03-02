@@ -19,15 +19,15 @@ def fragment(image):
 #---Ciclo per creazione pacchetti di stringhe e rimozione dei caratteri che non vengono letti dalle dongle----
 	for n in range(0,num):
 		print(n)
-		time.sleep(0.2)
+		time.sleep(0.25)
 		if n > 0:
-			dec = dec+80
+			dec = dec+70
 			n = dec
 			if n > num:
 				break
 			else:	
 				print(n)
-				m = n+80
+				m = n+70
 				if m > num:
 					print("m>num")
 					m = num
@@ -49,7 +49,7 @@ def fragment(image):
 		else:
 			print("n=0")
 			print(n)
-			m = n+80
+			m = n+70
 			#print(m)
 			nuova_stringa = image_64[n:m].replace("/","_")
 			nuova_stringa = nuova_stringa.replace("\n","")
@@ -60,4 +60,8 @@ def fragment(image):
 
 
 	print("----Frammentazione conclusa---")
+	send_data.send_dongle("image","0")
+	time.sleep(0.05)
 	send_data.send_dongle("onoff","1")
+	time.sleep(0.05)
+	send_data.send_dongle("onoff","0")
