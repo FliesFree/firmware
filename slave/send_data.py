@@ -17,11 +17,27 @@ def send_dongle(propr,dato):
 			print(" ---> Send Succesful!")
 			i = 1
 		except pycurl.error:
-			print("Errore!!!")
+			print("ERROR!!!")
 			print(dato)
+			print(" ******* RESEND THE STRING ******")
 			i = 0
-			print("2 minuti di attesa...")
-			time.sleep(120)
+			print("-+-+-+-+-+-+- A few minutes waiting to reset the dongle -+-+-+-+-+-+-+")
+			print("---")
+			time.sleep(10)
+			print("---------")
+			time.sleep(15)
+			print("-------------------")
+			time.sleep(15)
+			print("------------------------------------")
+			time.sleep(20)
+			print("\/\/\/\/\/\/\/\/\ ONE MINUTE \/\/\/\/\/\/\/")
+			time.sleep(20)
+			print("------------------------------------------------")
+			time.sleep(20)
+			print("-----------------------------------------------------------")
+			time.sleep(20)
+			print("----------- RESEND NOW ------> -----> --->")
+			time.sleep(2)
 		
 		c.close()
 		
