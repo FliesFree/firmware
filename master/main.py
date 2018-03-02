@@ -1,9 +1,18 @@
+#------------FliesFree Pietro Rignanese 2017 --------------
+
 import image_capture
 import image_process
 import send_server as send
 import date_hour as dh
 import data_db
 import time
+
+print(" ----------- FLIESFREE -----------")
+print(" -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-")
+print(" __________DEVELOPED BY___________")
+print("       \ Pietro Rignanese /       ")
+print("                                  ")
+print("__________________________________")
 
 #Capture the image with PiCamera
 image_capture.get_img()
@@ -22,4 +31,4 @@ data_db.query_select()
 data_db.query_delete()
 
 #The raspberry go to sleep
-print("Rasp SLEEP!")
+print(" -----------> Rasp SLEEP!")
