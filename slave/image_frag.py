@@ -3,20 +3,19 @@ import date_hour
 import send_data
 import time
 
+#Fragment the image
 def fragment(image):
 	send_data.send_dongle("codice",1)
 	#image = 'Risultati/result_2018_2_25_13.jpg'
-#-------------Converte immagine in base64 e conta i caratteri che la compongono----
+#------------- ENCODE BASE 64 -----------
 	image_64 = base64.encodestring(open(image,"rb").read())
 	print(image_64)
-	print(len(image_64))
-
-
+	print(len(image_64)) #Lenght string in base64
 	num = len(image_64) #Numero caratteri composti dall'immagine
 	#num = 1000
 	dec = 0 #Contatore per pacchettidi stringhe
 	nuova_stringa = ""
-#---Ciclo per creazione pacchetti di stringhe e rimozione dei caratteri che non vengono letti dalle dongle----
+#---LOOP TO SEND WITH DONGLE APIO----
 	for n in range(0,num):
 		print(n)
 		time.sleep(0.25)
@@ -59,7 +58,7 @@ def fragment(image):
 			#time.sleep(0.05)
 
 
-	print("----Frammentazione conclusa---")
+	print("------- Fragment Complete! ------")
 	send_data.send_dongle("image","0")
 	time.sleep(0.05)
 	send_data.send_dongle("onoff","1")
