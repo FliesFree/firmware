@@ -39,7 +39,9 @@ def query_select():
 					image_64 = image_64 + row[5]
 			image_64 = image_64.replace("_","/")
 			image_64 = image_64.replace(".","=")
+			image_64 = image_64 + "===="
 			print(image_64)
+			print(len(image_64))
 			base_64_decode = base64.decodestring(image_64)
 			url_photo_slave = "Results/result_slave_%s.png"%date_hour.date_hour_now()
 			immagine = open(url_photo_slave,"wb")
