@@ -80,9 +80,9 @@ def flies_search():
     print("Search complete!")
     print("Flies:")
     print(num_mosche)
-    dongle.send_dongle("onoff",0)
-    time.sleep(0.2)
     dongle.send_dongle("image","0")
+    time.sleep(0.2)
+    dongle.send_dongle("onoff", 0)
     time.sleep(0.2)
     dongle.send_dongle("flies",num_mosche)
     num_mosche = 0 #Riposrto a zero il numero delle mosche per una conta futura
