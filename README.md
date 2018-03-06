@@ -43,12 +43,14 @@ ________________________________________________________________________
 https://github.com/FliesFree/firmware/blob/master/diagram.png
 
 ________________________________________________________________________
-## Sleep&Wake
+### Sleep&Wake
 Raspberry Pi 3 + [Witty Pi 2](http://www.uugear.com/doc/WittyPi2_UserManual.pdf)
 
 _________________________________________________________________________
-## Cost
+### Cost
 <img src="https://github.com/FliesFree/firmware/blob/master/Cost.png"/>
+
+__________________________________________________________________________
       
 Enjoi it!
 
