@@ -5,9 +5,11 @@
 Firmware to be installed on the Raspberry<br>
 All the details in the following reposity: https://github.com/FliesFree/FliesFree <br>
 
+___________________________________________________________________________
 ## Scheme
 <img src="https://github.com/FliesFree/firmware/blob/master/Scheme.png"/>
 
+___________________________________________________________________________
 Steps:
   * Install [ApioOS](https://github.com/ApioLab/ApioOS)
   * Insert the [dongle](https://www.apio.cc/component/virtuemart/store_ita/prodotti/apio-dongle-1-4-detail) in a USB port of Rasp
@@ -35,9 +37,16 @@ Steps:
       * `sudo apt-get install mysqldb`
    * Run the `main.py` in both shields
       
+________________________________________________________________________
+
 ### Workflow:
 https://github.com/FliesFree/firmware/blob/master/diagram.png
 
+________________________________________________________________________
+## Sleep&Wake
+Raspberry Pi 3 + [Witty Pi 2](http://www.uugear.com/doc/WittyPi2_UserManual.pdf)
+
+_________________________________________________________________________
 ## Cost
 <img src="https://github.com/FliesFree/firmware/blob/master/Cost.png"/>
       
