@@ -12,7 +12,7 @@ def query_select():
 	contr = 0 #Controll to loop
 	
 	#Loop 10 minutes --> cycle until it finds controllo = 1
-	for n in range(0,40):
+	for n in range(0,55):
 		db = MySQLdb.connect(host="localhost",user="root",passwd="root",db="Logs")
 		cur = db.cursor()
 		cur.execute("SELECT id,onoff,codice FROM `11` WHERE onoff=1")
@@ -53,6 +53,8 @@ def query_select():
 			contr = 1
 			print("Immagine elaborata!")
 			send_server.send_photo(url_photo_slave)
+			db.close()
+			break
 		
 		db.close()
 		time.sleep(10)
