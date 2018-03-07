@@ -76,7 +76,7 @@ Raspberry Pi 3 + [Witty Pi 2](http://www.uugear.com/doc/WittyPi2_UserManual.pdf)
  * Insert the Witty Pi on Raspberry board
  * You will then see a new “wittyPi” directory
  * Placed in the folder "wittyPi" --> `sudo ./wittyPi.sh` command to run the witty program
- * You can use our web application to create your schedule script. Just simply open this URL in your web browser and you are ready to go: http://www.uugear.com/app/wittypi-scriptgen/
+ * You can use our web application to create your schedule script. Just simply open this URL in your web browser and you are ready to go: http://www.uugear.com/app/wittypi-scriptgen/  --> Set Sleep&Wake as you like it!
 _________________________________________________________________________
 ### Cost
 <img src="https://github.com/FliesFree/firmware/blob/master/Cost.png"/>
