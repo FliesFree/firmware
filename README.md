@@ -52,8 +52,9 @@ Steps:
                ])
                
       * For the tests you can use my program made in Slim: https://drive.google.com/file/d/1-gjFlUtisgAeFyHhrSlG2WSVDSyHLBr0/view
-      * Extract and import everything into htdocs
-      * Run XAMPP
+        * Install [XAMPP](https://www.apachefriends.org/it/index.html)
+        * Extract and import everything into `C:/xampp/htdocs`
+        * Run XAMPP
          
    * Run the `main.py` in both shields
       
