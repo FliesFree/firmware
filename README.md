@@ -110,6 +110,12 @@ Raspberry Pi 3 + [Witty Pi 2](http://www.uugear.com/doc/WittyPi2_UserManual.pdf)
            OFF   M50
 
 _________________________________________________________________________
+
+### Video
+https://www.youtube.com/watch?v=xQV41bF7Uwc
+
+_________________________________________________________________________
+
 ### Cost
 <img src="https://github.com/FliesFree/firmware/blob/master/Cost.png"/>
 
