@@ -77,6 +77,38 @@ Raspberry Pi 3 + [Witty Pi 2](http://www.uugear.com/doc/WittyPi2_UserManual.pdf)
  * You will then see a new “wittyPi” directory
  * Placed in the folder "wittyPi" --> `sudo ./wittyPi.sh` command to run the witty program
  * You can use our web application to create your schedule script. Just simply open this URL in your web browser and you are ready to go: http://www.uugear.com/app/wittypi-scriptgen/  --> Set Sleep&Wake as you like it!
+ * This is the script that is right for us:
+ 
+           #Set the Sleep&Wake time --> Sleep 50 minutes and Run 10 minutes from 7:00 to 19:00
+           BEGIN 2015-08-01 06:00:00
+           END   2025-07-31 23:59:59
+           ON    M10
+           OFF   H12
+           ON    M10
+           OFF   M50
+           ON    M10
+           OFF   M50
+           ON    M10
+           OFF   M50
+           ON    M10
+           OFF   M50
+           ON    M10
+           OFF   M50
+           ON    M10
+           OFF   M50
+           ON    M10
+           OFF   M50
+           ON    M10
+           OFF   M50
+           ON    M10
+           OFF   M50
+           ON    M10
+           OFF   M50
+           ON    M10
+           OFF   M50
+           ON    M10
+           OFF   M50
+
 _________________________________________________________________________
 ### Cost
 <img src="https://github.com/FliesFree/firmware/blob/master/Cost.png"/>
