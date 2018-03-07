@@ -20,6 +20,7 @@ ___________________________________________________________________________
  * Solar panel
  * Lithium Battery
  * Voltage Booster
+ * USB/DC Lithium Polymer battery charger 
 
 ___________________________________________________________________________
 Steps:
