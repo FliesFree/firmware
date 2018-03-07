@@ -35,6 +35,26 @@ Steps:
       * `sudo apt-get install python-matplotlib`
    * Install MySQL:
       * `sudo apt-get install mysqldb`
+   * Change the IP to connect the web server:
+      * `firmware/master/send_server.py`:
+        
+             #Send to Server Web
+             def send_photo(url_photo):
+               print(" -->  --> Send...")
+               c = pycurl.Curl()
+               c.setopt(c.URL, '-----CHANGE IP-----/------CHANGE URL------')
+               print("-- URL OK! --")
+               c.setopt(c.HTTPPOST, [
+                 ('fileupload', (
+                      # upload the contents of this file
+                      c.FORM_FILE, url_photo,
+                 )),
+               ])
+               
+      * For the tests you can use my program made in Slim: https://drive.google.com/file/d/1-gjFlUtisgAeFyHhrSlG2WSVDSyHLBr0/view
+      * Extract and import everything into htdocs
+      * Run XAMPP
+         
    * Run the `main.py` in both shields
       
 ________________________________________________________________________
