@@ -67,6 +67,16 @@ ________________________________________________________________________
 ### Sleep&Wake
 Raspberry Pi 3 + [Witty Pi 2](http://www.uugear.com/doc/WittyPi2_UserManual.pdf)
 
+ * Follow the manual for installing the shield
+ * I strongly recommend to install the software for Witty Pi 2 BEFORE physically mount Witty Pi 2 on your Raspberry Pi.
+ * The command to install is: 
+      * `wget http://www.uugear.com/repo/WittyPi2/installWittyPi.sh`
+      * `sudo sh installWittyPi.sh`
+ * Reboot your Raspberry Pi
+ * Insert the Witty Pi on Raspberry board
+ * You will then see a new “wittyPi” directory
+ * Placed in the folder "wittyPi" --> `sudo ./wittyPi.sh` command to run the witty program
+ * You can use our web application to create your schedule script. Just simply open this URL in your web browser and you are ready to go: http://www.uugear.com/app/wittypi-scriptgen/
 _________________________________________________________________________
 ### Cost
 <img src="https://github.com/FliesFree/firmware/blob/master/Cost.png"/>
