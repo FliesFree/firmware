@@ -9,6 +9,18 @@ ___________________________________________________________________________
 ## Scheme
 <img src="https://github.com/FliesFree/firmware/blob/master/Scheme.png"/>
 
+### Components
+ * Raspberry Pi 3
+   * ApioOS
+   * Raspbian Jassie
+ * Camera Pi
+ * Apio Dongle
+ * Witty Pi 2
+ * Micro SD
+ * Solar panel
+ * Lithium Battery
+ * Voltage Booster
+
 ___________________________________________________________________________
 Steps:
   * Install [ApioOS](https://github.com/ApioLab/ApioOS)
