@@ -125,6 +125,7 @@ Raspberry Pi 3 + [Witty Pi 2](http://www.uugear.com/doc/WittyPi2_UserManual.pdf)
  * Set `crontab` --> in `/home` write: `sudo crontab -e`
       * Insert to end file: `@reboot python /home/pi/FliesFree/master/firmware/master/main.py` or your path to MASTER
       * Insert to end file: `@reboot python /home/pi/FliesFree/slave/firmware/slave/main.py` or your path to SLAVE
+      
    This comand run the program when Rasp on.
 _________________________________________________________________________
 
