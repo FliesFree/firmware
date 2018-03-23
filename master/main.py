@@ -28,7 +28,7 @@ image_process.flies_search()
 
 #Query to send and delete db
 data_db.query_select()
-#data_db.query_delete()
+data_db.query_delete()
 
 #The raspberry go to sleep
 print(" -----------> Rasp SLEEP!")
