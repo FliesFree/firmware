@@ -23,12 +23,12 @@ image_capture.get_img()
 image_process.flies_search()
 
 #Send the image_master to server web -- this is a test -- this function is run in flies.search
-#url_photo = 'Results/result_%s.png' %dh.date_hour_now()
-#send.send_photo(url_photo)
+#url_photo = 'Results/result_2018_2_28_13.png'
+#send.send_photo(1,url_photo)
 
 #Query to send and delete db
 data_db.query_select()
-data_db.query_delete()
+#data_db.query_delete()
 
 #The raspberry go to sleep
 print(" -----------> Rasp SLEEP!")
